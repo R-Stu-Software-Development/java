@@ -3,6 +3,11 @@
 
 ### change this code at your own risk
 
+
+### requirement
+# pip install discord
+# pip install discord-ext-bot
+
 import random
 import discord
 from discord.ext import commands
@@ -11,14 +16,18 @@ from discord.ext.commands import Bot
 
 ###client = commands.Bot(command_prefix="~")
 
-TOKEN = 'ODg4MDc0NzQxODc1OTAwNDE3.YUNaDg.31Sho9e2TW06uVxfwoIMEsVfNAk'
+TOKEN = 'token'
 
+### prefix command
 bot = commands.Bot(command_prefix='~')
 
+
+### nothing
 @bot.command()
 async def on_ready():
     print("im online")
 
+### bot command
 @bot.command()
 async def hi(ctx):
     await ctx.reply('Hello!',)
